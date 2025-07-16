@@ -13,16 +13,17 @@ const getData = (location) => {
       if (response.ok) {
         return response.json();
       } else if (response.status == 400) {
-        throw new Error(
-          "No such country exists. Please enter a valid location"
-        );
+        const syntaxError =
+          "No such country exists. Please enter a valid location";
+        errorLabel.textContent = syntaxError;
+        throw new Error(syntaxError);
       }
     })
     .then((data) => {
       return data;
     })
     .catch((error) => {
-      console.error(error);
+      return error;
     });
 };
 
@@ -45,6 +46,6 @@ form.addEventListener("submit", (e) => {
       description.textContent = data.description;
     })
     .catch((e) => {
-      errorLabel.textContent = e;
+      console.error(e);
     });
 });
