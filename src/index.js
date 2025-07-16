@@ -14,7 +14,7 @@ const getData = (location) => {
         return response.json();
       } else if (response.status == 400) {
         const syntaxError =
-          "No such country exists. Please enter a valid location";
+          "No such location exists. Please enter a valid location";
         errorLabel.textContent = syntaxError;
         throw new Error(syntaxError);
       }
