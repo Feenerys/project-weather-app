@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <form>
+      <h1>Weather Form</h1>
+      <div class="input-line">
+        <label for="location">Location:</label>
+        <input id="location" name="Location" type="text" required />
+      </div>
+      <button type="submit">Submit</button>
+      <span class="error" aria-live="polite"></span>
+    </form>
+
+    <div class="container">
+      <div class="loading"></div>
+      <div class="address"></div>
+      <div class="description"></div>
+      <div class="current-weather"><a class="temp"></a></div>
+    </div>
+  </body>
+</html>
