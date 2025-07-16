@@ -7,16 +7,17 @@
   </head>
   <body>
     <form>
-      <h1>Form</h1>
+      <h1>Weather Form</h1>
       <div class="input-line">
-        <label for="country">Country:</label>
-        <input id="country" name="Country" type="text" required />
+        <label for="location">Location:</label>
+        <input id="location" name="Location" type="text" required />
       </div>
       <button type="submit">Submit</button>
       <span class="error" aria-live="polite"></span>
     </form>
 
     <div class="container">
+      <div class="loading"></div>
       <div class="address"></div>
       <div class="description"></div>
       <div class="current-weather"><a class="temp"></a></div>

@@ -12,3 +12,14 @@ form {
 .error {
   color: red;
 }
+
+.container {
+  display: grid;
+  /* justify-items: center; */
+  align-items: center;
+ 
+  margin: 40px 30px;
+  gap: 3px;
+
+  font-size: larger;
+}
